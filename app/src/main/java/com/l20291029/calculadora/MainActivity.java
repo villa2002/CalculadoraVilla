@@ -247,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
         proceso = resultado.getText().toString();
         proceso = proceso.replaceAll("x", "*");
         proceso = proceso.replaceAll("%", "/100");
+        proceso = proceso.replaceAll("÷", "/");
         Context context = Context.enter();
         context.setOptimizationLevel(-1);
         String finalResut= "";
